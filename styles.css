@@ -80,6 +80,8 @@ html {
   font-size: 30px;
 }
 
+
+
 .clients {
   text-align: center;
 }
@@ -155,7 +157,7 @@ html {
   margin: 20px;
   width: calc(33.333% - 40px);
   background-color: #f4f4f4;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .card .child h3 {
@@ -603,6 +605,10 @@ button {
     display: block;
   }
 
+  .clients p {
+    font-size: 12px;
+  }
+
   .container {
     flex-direction: column;
     padding: 0 40px;
@@ -636,7 +642,7 @@ button {
   }
 
   .text-down h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .left-sections,
@@ -849,7 +855,7 @@ button {
   }
 
   .text-down h2 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
 
   .icon-container img {
