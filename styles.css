@@ -78,10 +78,7 @@ html {
 
 .clients h3 {
   font-size: 30px;
-  margin: 0;
 }
-
-
 
 .clients {
   text-align: center;
@@ -97,7 +94,6 @@ html {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin: 30px;
 }
 
 .content-section .text-content h1 {
@@ -143,7 +139,21 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+}
+
+.text-top {
+  max-width: 350px;
+  padding: 30px;
+  text-align: center;
+}
+
+.text-top h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.text-top p {
+  font-size: 12px;
 }
 
 .top-row {
@@ -156,21 +166,22 @@ html {
 
 .card {
   text-align: center;
-  margin: 20px;
+  margin: 18px;
   width: calc(33.333% - 40px);
-  background-color: #f4f4f4;
+  border: 2px solid #f4f4f4;
   font-size: 12px;
 }
 
 .card .child h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #252525;
   margin: 0;
+  padding: 0 10px;
 }
 
 .child {
   text-align: center;
-  padding: 0 80px;
+  padding: 0 70px;
 }
 
 .learn {
@@ -183,9 +194,7 @@ html {
 }
 
 .card .icon {
-  font-size: 30px;
   display: block;
-  margin-bottom: 10px;
 }
 
 .bottom-row {
@@ -217,23 +226,27 @@ button {
   border-radius: 5px;
 }
 
-.container {
+.middle {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 70px;
   background-color: #f4f4f4;
-  max-width: 100%;
 }
 
 .left-sections {
-
   width: 45%;
+  background-color: #f4f4f4;
 }
 
 .left-sections h2 {
   font-size: 2rem;
+  margin: 0;
+}
+
+.left-sections p {
+  margin: 5px 0;
 }
 
 .right-sections {
@@ -241,15 +254,16 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 45%;
+  background-color: #f4f4f4;
 }
 
 .items {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .icons {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .icons img {
@@ -271,21 +285,31 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  width: calc(100% - 40px); 
+  width: calc(100% - 40px);
+  margin-bottom: 20px;
+}
+
+.container-bottom {
+  background-color: #f4f4f4;
+  width: 100%;
+  text-align: center;
 }
 
 /* First div styling */
 .text-block {
   text-align: center;
   max-width: 600px;
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.text-block h3 {
+  margin-bottom: -10px;
 }
 
 /* Container for the images */
 .image-container {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin-bottom: 60px;
 }
 
@@ -294,14 +318,14 @@ button {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 /* Each image item */
 .image-item {
   position: relative;
   width: 100%;
-  max-width: 350px; 
+  max-width: 350px;
 }
 
 .image-item img {
@@ -318,17 +342,17 @@ button {
   right: 10px;
   color: #333;
   background-color: white;
-  padding: 10px;
+  padding: 10px 45px;
   text-align: center;
   height: 120px;
-  margin-bottom: -60px; 
+  margin-bottom: -60px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 .image-overlay a::after {
-  content: " →"; 
-  margin-right: 5px; 
+  content: " →";
+  margin-right: 5px;
 }
 
 /* "Read more" link styling */
@@ -339,9 +363,8 @@ button {
 
 .text-down {
   text-align: center;
-  max-width: 800px;
   font-size: 1.2rem;
-  margin: 20px;
+  margin: 0 30px;
   padding: 20px;
 }
 
@@ -362,34 +385,34 @@ button {
 }
 
 .text-down a::after {
-  content: " →"; 
-  margin-right: 5px; 
+  content: " →";
+  margin-right: 5px;
 }
 
 /* Customer Section Styles */
 .customer-section {
-  display: flex; 
-  padding: 40px; 
-  background-color: #f9f9f9; 
+  display: flex;
+  padding: 40px;
+  background-color: #f4f4f4;
 }
 
 .customer-info {
-  flex: 2; 
+  flex: 2;
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  padding-left: 20px; 
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
   padding: 0 20px;
 }
 
 .customer-info p {
-  margin: 5px 0; 
+  margin: 5px 0;
   font-size: 1.2rem;
   text-align: justify;
 }
 
 .customer-info h2 {
-  margin: 10px 0; 
+  margin: 10px 0;
   color: green;
   font-size: 1.5rem;
 }
@@ -401,10 +424,10 @@ button {
 
 /* Icon Container */
 .icon-container {
-  display: flex; 
-  justify-content: flex-start; 
+  display: flex;
+  justify-content: flex-start;
   gap: 55px;
-  margin: 15px 0; 
+  margin: 15px 0;
 }
 
 /* "Read more" link styling */
@@ -414,13 +437,13 @@ button {
 }
 
 .icon-container a::after {
-  content: " →"; 
-  margin-right: 5px; 
+  content: " →";
+  margin-right: 5px;
 }
 
 /* Meet Customers Link */
 .meet-customers {
-  text-decoration: none; 
+  text-decoration: none;
   color: green;
   font-weight: bold;
   display: flex;
@@ -429,43 +452,42 @@ button {
 }
 
 .arrow {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
-
 
 .customer-info .icon-container,
 .customer-info .meet-customers {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .customer-image {
-  width: 300px; 
-  height: 300px; 
-  overflow: hidden; 
-  position: relative; 
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
 }
 
 .customer-image img {
-  position: absolute; 
-  top: 50%; 
+  position: absolute;
+  top: 50%;
   left: 50%;
-  width: auto; 
-  height: auto; 
+  width: auto;
+  height: auto;
   min-width: 100%;
-  min-height: 100%; 
+  min-height: 100%;
   transform: translate(-50%, -50%);
 }
 
 /* Footer Styles */
 .footer {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
+  margin-top: 20px;
   background-color: #263238;
-
   color: white;
-  border-top: 1px solid #ccc; 
 }
 
 /* Footer Logo Section */
@@ -473,10 +495,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 150px;
-  text-align: center;
-  width: 35%;
 }
 
 .social-icons img {
@@ -486,37 +506,36 @@ button {
 
 .logo {
   width: 150px;
+  height: auto;
 }
-
 
 .footer-logo p {
   margin: 10px 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
-
 
 .social-icons {
   display: flex;
-  justify-content: center; 
-  gap: 10px; 
+  justify-content: center;
+  gap: 25px;
 }
-
 
 .footer-content {
-  display: flex; 
-  flex: 2; 
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
 }
 
-.footer-links,
-.footer-support {
-  flex: 1; 
+.footer-content h2 {
+  font-size: 12px;
 }
 
 .footer-links ul,
 .footer-support ul {
   list-style-type: none;
   padding: 0;
+  font-size: 10px;
 }
 
 .footer-links a,
@@ -543,8 +562,7 @@ button {
 }
 
 .input-container input {
-  flex: 1;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: rgb(56, 55, 55);
@@ -559,11 +577,10 @@ button {
 }
 
 .telegram-icon img {
-  width: 20px;
+  width: 10px;
   height: auto;
   cursor: pointer;
 }
-
 
 .hamburger {
   display: none;
@@ -581,7 +598,7 @@ button {
   .card,
   .text-content,
   .image-text {
-    width: 100%; 
+    width: 100%;
     margin: 5px 0;
   }
 
@@ -590,8 +607,6 @@ button {
     padding: 0;
   }
 }
-
-
 
 @media (max-width: 786px) {
   .header nav {
@@ -612,9 +627,11 @@ button {
     font-size: 12px;
   }
 
-  .container {
+  .middle {
     flex-direction: column;
     padding: 0 40px;
+    text-align: center;
+    gap: 20px;
   }
 
   .learn h3 {
@@ -636,7 +653,7 @@ button {
     flex-direction: column;
     justify-content: center;
     gap: 70px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 
   .child {
@@ -650,55 +667,54 @@ button {
 
   .left-sections,
   .right-sections {
-    width: 100%; 
+    width: 100%;
   }
 
   .right-sections {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .items {
-    justify-content: center; 
+    justify-content: center;
     margin-bottom: 15px;
   }
 
   .text-block,
   .text-down {
     max-width: 100%;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .image-item {
-    max-width: 100%; 
-    margin-bottom: 20px; 
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
-  
   .customer-section {
-    flex-direction: column; 
+    flex-direction: column;
     padding: 20px;
   }
 
   .customer-image {
-    width: 100%; 
-    margin-bottom: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
     text-align: center;
-    display: block; 
+    display: block;
   }
 
   .customer-image img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
   }
 
   .customer-info {
-    padding-left: 0; 
-    padding: 0; 
+    padding-left: 0;
+    padding: 0;
   }
 
   .customer-info h2 {
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
   }
 
   .customer-info p {
@@ -707,15 +723,15 @@ button {
 
   .icon-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
   }
 
   .icon-container img {
-    margin: 5px; 
-    width: 40px; 
-    height: auto; 
+    margin: 5px;
+    width: 40px;
+    height: auto;
   }
 
   .icon-container a {
@@ -770,7 +786,7 @@ button {
 }
 
 @media (max-width: 480px) {
-  .container,
+  .middle,
   .customer-section {
     flex-direction: column;
     padding: 10px;
@@ -794,6 +810,10 @@ button {
     font-size: 1rem;
     color: #252525;
     margin: 0;
+  }
+
+  .footer-content {
+    font-size: 10px;
   }
 
   .child {
@@ -867,6 +887,10 @@ button {
 
   .customer-info h2 {
     font-size: 1.2rem;
+  }
+
+  .footer-content h2 {
+    font-size: 10px;
   }
 
   .customer-info p {
