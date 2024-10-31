@@ -158,6 +158,12 @@ html {
   font-size: 10px;
 }
 
+.card .child h3 {
+  font-size: 1rem;
+  color: #252525;
+  margin: 0;
+}
+
 .child {
   text-align: center;
   padding: 0 80px;
@@ -170,12 +176,6 @@ html {
 .learn h3 {
   font-size: 2rem;
   margin-bottom: 10px;
-}
-
-.card .child h3 {
-  font-size: 2rem;
-  color: #252525;
-  margin: 0;
 }
 
 .card .icon {
@@ -244,6 +244,7 @@ button {
 }
 
 .left-sections {
+
   width: 45%;
 }
 
@@ -273,7 +274,7 @@ button {
 
 .text-contents h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .text-contents p {
@@ -291,7 +292,7 @@ button {
 
 /* First div styling */
 .text-block {
-  text-align: center;
+  text-align: left;
   max-width: 500px;
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -400,6 +401,7 @@ button {
 .customer-info p {
   margin: 5px 0; 
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 .customer-info h2 {
@@ -586,7 +588,7 @@ button {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   .header nav {
     display: none;
     flex-direction: column;
@@ -603,7 +605,34 @@ button {
 
   .container {
     flex-direction: column;
-    padding: 20px;
+    padding: 0 40px;
+  }
+
+  .learn h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .left-sections h2 {
+    font-size: 1.5rem;
+  }
+
+  .card .child h3 {
+    font-size: 1.5rem;
+    color: #252525;
+    margin: 0;
+  }
+
+  .image-blocks {
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap; 
+  }
+
+  .child {
+    text-align: center;
+    padding: 0 40px;
   }
 
   .text-down h2 {
@@ -710,7 +739,7 @@ button {
   .content-section .text-content h1 {
     font-size: 2rem;
     color: #333;
-    text-align: start;
+    text-align: left;
   }
 
   .content-section {
@@ -741,6 +770,26 @@ button {
   .left-sections,
   .right-sections {
     width: 100%;
+  }
+
+  .learn h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .left-sections h2 {
+    font-size: 1.3rem;
+  }
+
+  .card .child h3 {
+    font-size: 1rem;
+    color: #252525;
+    margin: 0;
+  }
+
+  .child {
+    text-align: center;
+    padding: 0 40px;
   }
 
   .right-sections {
