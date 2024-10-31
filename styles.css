@@ -1,0 +1,734 @@
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Heading Styles */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.header .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .auth-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header .auth-buttons button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.header .auth-buttons .login {
+  background-color: transparent;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.header .auth-buttons .register {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background-color: #f4f4f4;
+  max-width: 100%;
+}
+
+.content-section .text-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.clients h3 {
+  font-size: 30px;
+}
+
+.clients {
+  text-align: center;
+}
+
+.clients-logo img {
+  width: 25px;
+  height: auto;
+}
+
+.clients-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.content-section .text-content h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: start;
+}
+
+.hero {
+  color: green;
+}
+
+.content-section .text-content p {
+  font-size: 12px;
+  color: #666;
+  margin-top: -25px;
+}
+
+.content-section .text-content .register {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content-section .image-content {
+  text-align: center;
+}
+
+.content-section .image-content img {
+  width: 100%;
+  height: auto;
+  padding-right: 40px;
+  max-width: 400px;
+}
+
+/* Section 2 */
+.content-section1 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card {
+  text-align: center;
+  margin: 20px;
+  width: calc(33.333% - 40px);
+  background-color: #f4f4f4;
+  font-size: 10px;
+}
+
+.child {
+  text-align: center;
+  padding: 0 80px;
+}
+
+.learn {
+  padding: 0 20px;
+}
+
+.learn h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card .child h3 {
+  font-size: 2rem;
+  color: #252525;
+  margin: 0;
+}
+
+.card .icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.image-text img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-content {
+  width: calc(50% - 40px);
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .text-content,
+  .image-text {
+    width: 100%; 
+    margin: 5px 0;
+  }
+
+  .text-content {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background-color: #f4f4f4;
+  max-width: 100%;
+}
+
+.left-sections {
+  width: 45%;
+}
+
+.left-sections h2 {
+  font-size: 2rem;
+}
+
+.right-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 45%;
+}
+
+.items {
+  display: flex;
+  align-items: center; 
+}
+
+.icons {
+  margin-right: 10px; 
+}
+
+.icons img {
+  height: 20px;
+}
+
+.text-contents h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.text-contents p {
+  margin: 0;
+}
+
+/* General container to hold both text and images */
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: calc(100% - 40px); 
+}
+
+/* First div styling */
+.text-block {
+  text-align: center;
+  max-width: 500px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for the images */
+.image-container {
+  width: 100%;
+  max-width: 1200px; 
+  margin-bottom: 60px;
+}
+
+/* Image blocks will be displayed horizontally */
+.image-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+/* Each image item */
+.image-item {
+  position: relative;
+  width: 100%;
+  max-width: 350px; 
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay text on the image */
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  color: #333;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  height: 120px;
+  margin-bottom: -60px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.image-overlay a::after {
+  content: " →"; 
+  margin-right: 5px; 
+}
+
+/* "Read more" link styling */
+.image-overlay a {
+  color: green;
+  text-decoration: none;
+}
+
+.text-down {
+  text-align: center;
+  max-width: 800px;
+  font-size: 1.2rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.text-down h2 {
+  font-size: 4rem;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.text-down a {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin: 20px;
+}
+
+.text-down a::after {
+  content: " →"; 
+  margin-right: 5px; 
+}
+
+/* Customer Section Styles */
+.customer-section {
+  display: flex; 
+  padding: 40px; 
+  background-color: #f9f9f9; 
+}
+
+.customer-info {
+  flex: 2; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  padding-left: 20px; 
+  padding: 0 20px;
+}
+
+.customer-info p {
+  margin: 5px 0; 
+  font-size: 1.2rem;
+}
+
+.customer-info h2 {
+  margin: 10px 0; 
+  color: green;
+  font-size: 1.5rem;
+}
+
+.icon-container img {
+  width: 30px;
+  height: auto;
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex; 
+  justify-content: flex-start; 
+  gap: 55px;
+  margin: 15px 0; 
+}
+
+/* "Read more" link styling */
+.icon-container a {
+  color: green;
+  text-decoration: none;
+}
+
+.icon-container a::after {
+  content: " →"; 
+  margin-right: 5px; 
+}
+
+/* Meet Customers Link */
+.meet-customers {
+  text-decoration: none; 
+  color: green;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.arrow {
+  margin-right: 5px; 
+}
+
+
+.customer-info .icon-container,
+.customer-info .meet-customers {
+  display: flex; 
+  align-items: center; 
+}
+
+.customer-image {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.customer-image img {
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  width: auto; 
+  height: auto; 
+  min-width: 100%;
+  min-height: 100%; 
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Styles */
+.footer {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 20px;
+  background-color: #263238;
+
+  color: white;
+  border-top: 1px solid #ccc; 
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 150px;
+  text-align: center;
+  width: 35%;
+}
+
+.social-icons img {
+  width: 15px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 150px;
+}
+
+
+.footer-logo p {
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+
+.footer-content {
+  display: flex; 
+  flex: 2; 
+  justify-content: space-between;
+}
+
+.footer-links,
+.footer-support {
+  flex: 1; 
+}
+
+.footer-links ul,
+.footer-support ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-support a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover,
+.footer-support a:hover {
+  text-decoration: underline;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+.telegram-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.telegram-icon img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-down h2 {
+    font-size: 2rem;
+  }
+
+  .left-sections,
+  .right-sections {
+    width: 100%; 
+  }
+
+  .right-sections {
+    display: grid;
+    grid-template-columns: 1fr; 
+  }
+
+  .items {
+    justify-content: center; 
+    margin-bottom: 15px;
+  }
+
+  .text-block,
+  .text-down {
+    max-width: 100%;
+    padding: 10px; 
+  }
+
+  .image-item {
+    max-width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  
+  .customer-section {
+    flex-direction: column; 
+    padding: 20px;
+  }
+
+  .customer-image {
+    width: 100%; 
+    margin-bottom: 20px; 
+    text-align: center;
+    display: block; 
+  }
+
+  .customer-image img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .customer-info {
+    padding-left: 0; 
+    padding: 0; 
+  }
+
+  .customer-info h2 {
+    font-size: 1.3rem; 
+  }
+
+  .customer-info p {
+    font-size: 1rem;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .icon-container img {
+    margin: 5px; 
+    width: 40px; 
+    height: auto; 
+  }
+
+  .icon-container a {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .footer-support,
+  .footer-subscribe {
+    margin-bottom: 20px;
+  }
+
+  .content-section .text-content h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: start;
+  }
+
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    max-width: 100%;
+  }
+
+  .header .auth-buttons button {
+    padding: 5px 15px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
